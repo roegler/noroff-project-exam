@@ -40,6 +40,10 @@ body {
     font-family: muli;
 }
 
+#header-items a:hover {
+    text-decoration: underline;
+}
+
 #top-image-index {
     width: 100%;
     height: 80vh;
@@ -127,3 +131,115 @@ body {
     font-size: 14px;
 }
 
+.page-title-news {
+    font-family: muli;
+    font-weight: 200;
+    font-size: 55px;
+    color: #000000;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+}
+
+/* ta en titt på dette, sliter med skygger samt størrelse og plassering av bilde */
+.information-box-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 70px 70px;
+}
+
+.information-box {
+    display: flex;
+    flex-direction: row;
+    font-family: muli;
+    padding: 50px 50px;
+    max-width: 30%;
+    box-shadow: 1px 1px 6px grey;
+    margin-top: 5%;
+    margin-left: 50%;
+}
+
+/* størrelsen på bildet? blurry */
+
+.information-box-img {
+width: 330px;
+border: 1px solid #707070;
+}
+
+.information-box-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    max-width: 60%;
+}
+
+.information-box-text a {
+    text-decoration: none;
+    font-family: muli;
+    font-weight: bold;
+    color: #000000;
+}
+
+.information-box-text a:hover {
+    text-decoration: underline;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 50px;
+}
+
+.about-container p {
+font-family: muli;
+font-size: 16px;
+padding-bottom: 20px;
+}
+
+.about-container h2 {
+    font-family: muli;
+    font-size: 30px;
+}
+
+.about-box {
+    display: flex;
+    padding: 30px 50px;
+    max-width: 61%;
+    box-shadow: 1px 1px 6px grey;
+    margin-top: 2%;
+}
+
+.about-img {
+    max-width: 61%;
+    /*
+    width: 1281px;
+    height: 735px;*/
+}
+
+.milestone-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.milestone-textbox {
+    display: flex;
+    flex-direction: column;
+    font-family: muli;
+    max-width: 15%;
+    box-shadow: 1px 1px 6px grey;
+    padding: 2%;
+    height: 20%;
+}
+
+.milestone-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.milestone-img img {
+    margin-top: 4%;
+}
