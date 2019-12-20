@@ -1,44 +1,100 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta lang="en">
-    <title>Microsite - SpaceX</title>
+    <title>Microsite SpaceX - Contact</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-
     <header id="page-header">
         <a href="index.html">
-            <img class="logo-header" src="Icons/1389029419000-space-x-logo.jpg" alt="Black SpaceX logo">
+        <img class="logo-header" src="Icons/1389029419000-space-x-logo.jpg" alt="Black SpaceX logo">
         </a>
+
         <nav id="header-items">
-            <a href="updates.html" class="update-item">UPDATES</a>
-            <a href="about.html" class="about-item">ABOUT SPACEX</a>
-            <a href="contact.html" class="contact-item">CONTACT</a>
+            <div class="hamburger-container" onclick="hamburgerClicked(this)">
+                <div class="first-line"></div>
+                <div class="second-line"></div>
+                <div class="third-line"></div>
+            </div>
+
+            <div id="menu">
+                <a href="updates.html" class="update-item">UPDATES</a>
+                <a href="about.html" class="about-item">ABOUT SPACEX</a>
+                <a href="contact.html" class="contact-item active">CONTACT</a>
+            </div>
         </nav>
     </header>
 
+    <div class="container-contact-page">
+        <div class="info-form-container">
+            <div class="contact-info-container">
+                <p>SPACEX HEADQUARTERS<br>
+                Rocket Road<br>
+                Hawthorne, California<br>
+                
+                <br>310-363-6000<br>
+                
+                <br>MEDIA INQUIRIES<br>
+                media@spacex.com<br>
+                
+                <br>SALES INQUIRIES<br>
+                sales@spacex.com
+                </p>
+            </div>
+
+            <div class="contact-form-container">
+            <form name="contactForm">
+                    <div class="name-container">
+                        <div class="firstname-container">
+                        First name:<br>                     
+                        <input type="text" name="Firstname">
+                        </div>
+                        <div class="lastname-container">
+                        Last name:<br>
+                        <input type="text" name="Lastname">
+                        </div>
+                    </div> 
+                    
+                    <div class="mail-container">
+                    Email:<br>
+                    <input type="email" name="Email">
+                    </div>
+
+                    <div class="tel-container">
+                    Phone:<br>
+                    <input type="tel" name="Phone">
+                    </div>
+                    <textarea name="comment">Write your message here...</textarea>
+
+                    <input type="button" class="send-button-contact" onclick="sendFormButtonPressed()" value="SEND">
+            </form>
+        </div>
+    </div>
+        <img class="img-contact-page" src="Optimized-images/photo-1543599723-86e84893ebba.jpeg" alt="Going to space"> 
+    </div>
+
     <footer id="page-footer">
         <p class="footer-item-text">SPACEX HEADQUARTERS <br> Rocket Road <br> Hawthorne, California <br>
-            <br> 310-363-6000</p>
+        <br> 310-363-6000</p>
     
         <p class="footer-item-text">MEDIA INQUIRIES <br>media@spacex.com<br>
-            <br> SALES INQUIRIES <br> sales@spacex.com</p>
+        <br> SALES INQUIRIES <br> sales@spacex.com</p>
     
         <img class="footer-item-img" src="Icons/1389029419000-space-x-logo.jpg" alt="Blac spaceX logo">
     
         <div class="footer-item-signup">
             <p class="footer-item-text">Do you want us to keep you posted on the latest news?</p>
             <div class="signup-container">
-                <input class="footer-item-text-box" placeholder="Write your email here">
-                <button type="button" class="footer-item-send-button">SIGN UP</button>
+            <input class="footer-item-text-box" placeholder="Write your email here">
+            <button type="button" class="footer-item-send-button">SIGN UP</button>
             </div>
         </div>  
     </footer>
-
 </body>
 </html>
